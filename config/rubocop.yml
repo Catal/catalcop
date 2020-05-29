@@ -45,7 +45,8 @@ Style/DoubleNegation:
 # 明示的に else で nil を返すのは分かりやすいので許可する
 Style/EmptyElse:
   EnforcedStyle: empty
-  # GuardClauseを強制しない
+
+# GuardClauseを強制しない
 # https://github.com/bbatsov/ruby-style-guide#no-nested-conditionals
 Style/GuardClause:
   Enabled: false
@@ -76,7 +77,8 @@ Style/NumericLiterals:
 # 名前付きキャプチャを使って参照したいので auto-correct しない
 Style/PerlBackrefs:
   AutoCorrect: false
-  # 特に model 内において、ローカル変数とメソッド呼び出しの区別をつけた方が分かりやすい場合が多い
+
+# 特に model 内において、ローカル変数とメソッド呼び出しの区別をつけた方が分かりやすい場合が多い
 Style/RedundantSelf:
   Enabled: false
 
