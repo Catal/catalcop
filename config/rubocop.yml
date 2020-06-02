@@ -51,6 +51,12 @@ Style/EmptyElse:
 Style/GuardClause:
   Enabled: false
 
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
 # rake タスクの順序の hash は rocket を許可する
 Style/HashSyntax:
   Exclude:
@@ -126,6 +132,9 @@ Style/RaiseArgs:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/NumericPredicate:
+  Enabled: false
+
 ##################### Layout ##################################
 
 # ({ と hash を開始した場合に ( の位置にインデントさせる
@@ -152,6 +161,15 @@ Layout/SpaceAroundOperators:
 Layout/SpaceBeforeFirstArg:
   Enabled: false
 
+# * 警告 120文字
+# * 禁止 160文字
+# のイメージ
+Layout/LineLength:
+  Enabled: true
+  Max: 160
+  Exclude:
+    - "spec/*/*.rb"
+
 ##################### Naming ##################################
 
 # has_ から始まるメソッドは許可する
@@ -177,5 +195,38 @@ Lint/UnderscorePrefixedVariableName:
 
 ##################### Metrics ##################################
 
+Metrics/AbcSize:
+  Enabled: true
+  Max: 30
+
+# 6 は強すぎるので緩める
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  Max: 10
+
+# 分岐の数。ガード句を多用しているとデフォルト 7 だと厳しい
+Metrics/PerceivedComplexity:
+  Enabled: true
+  Max: 10
+
 Metrics/ClassLength:
   Max: 300
+
+Metrics/MethodLength:
+  Enabled: true
+  Max: 20
+
+Metrics/BlockLength:
+  Enabled: true
+
+# デフォルト値を明示しないとHoundに怒られる
+Rails/FilePath:
+  EnforcedStyle: slashes
+
+##################### RSpec ##################################
+# ネストの最大数(falseにしてもいいくらいだが、念の為)
+RSpec/NestedGroups:
+  Max: 4
+
+RSpec/MessageChain:
+  Enabled: false
