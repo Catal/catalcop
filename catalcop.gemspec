@@ -3,8 +3,8 @@ require_relative 'lib/catalcop/version'
 Gem::Specification.new do |spec|
   spec.name          = "catalcop"
   spec.version       = Catalcop::VERSION
-  spec.authors       = ["kindaidai"]
-  spec.email         = ["kindai.0911@gmail.com"]
+  spec.authors       = ["geeknees"]
+  spec.email         = ["kawasaki@catal.jp"]
 
   spec.summary       = %q{RuboCop Catal}
   spec.description   = %q{Code style checking for Catal Ruby repositories.}
