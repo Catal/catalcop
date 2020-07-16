@@ -218,6 +218,8 @@ Metrics/MethodLength:
 
 Metrics/BlockLength:
   Enabled: true
+  Exclude:
+    - 'spec/**/*'
 
 # デフォルト値を明示しないとHoundに怒られる
 Rails/FilePath:
