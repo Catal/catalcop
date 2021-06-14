@@ -1,17 +1,17 @@
 # 自動生成されるものはチェック対象から除外する
 AllCops:
   Exclude:
-    - "vendor/**/*" # rubocop config/default.yml
-    - "db/fixtures/*.rb"
-    - "db/schema.rb"
-    - "db/seeds.rb"
-    - "db/migrate/*.rb"
-    - "bin/*"
-    - "config/**/*"
-    - "Guardfile"
-    - "app/helpers/rating_helper.rb"
-    - "node_modules/**/*"
-    - "lib/tasks/**/*"
+    - "**/vendor/**/*" # rubocop config/default.yml
+    - "**/db/fixtures/*.rb"
+    - "**/db/schema.rb"
+    - "**/db/seeds.rb"
+    - "**/db/migrate/*.rb"
+    - "**/bin/*"
+    - "**/config/**/*"
+    - "**/Guardfile"
+    - "**/app/helpers/rating_helper.rb"
+    - "**/node_modules/**/*"
+    - "**/lib/tasks/**/*"
   DisplayCopNames: true
   DisplayStyleGuide: true
   ExtraDetails: true
@@ -60,7 +60,7 @@ Style/HashTransformValues:
 Style/HashSyntax:
   Exclude:
     - "**/*.rake"
-    - "Rakefile"
+    - "**/Rakefile"
 
 # 条件式の方を意識させたい場合には後置の if/unless を使わない方が分かりやすい
 Style/IfUnlessModifier:
@@ -72,7 +72,7 @@ Style/Lambda:
 
 Style/MixinUsage:
   Exclude:
-    - "lib/task_logger.rb"
+    - "**/lib/task_logger.rb"
 
 # 1_000_000 と区切り文字が 2 個以上必要になる場合のみ _ 区切りを必須にする
 Style/NumericLiterals:
@@ -94,7 +94,7 @@ Style/RedundantReturn:
 # spec 内は見た目が綺麗になるので許可
 Style/Semicolon:
   Exclude:
-    - "spec/**/*"
+    - "**/spec/**/*"
 
 # fail と使い分ける必要ナシ
 Style/SignalException:
@@ -107,7 +107,7 @@ Style/SingleLineBlockParams:
 # rails g spec:*** コマンド経由だと、double quoteになる
 Style/StringLiterals:
   Exclude:
-    - "spec/**/*"
+    - "**/spec/**/*"
 
 # 複数行の場合はケツカンマを入れる
 Style/TrailingCommaInArguments:
@@ -167,7 +167,7 @@ Layout/LineLength:
   Enabled: true
   Max: 160
   Exclude:
-    - "spec/*/*.rb"
+    - "**/spec/*/*.rb"
 
 ##################### Naming ##################################
 
@@ -184,7 +184,7 @@ Naming/PredicateName:
 
 Lint/RescueException:
   Exclude:
-    - "lib/task_logger.rb"
+    - "**/lib/task_logger.rb"
 
 # * 同名のメソッドがある場合にローカル変数に `_` を付ける
 # * 一時変数として `_` を付ける
@@ -218,7 +218,7 @@ Metrics/MethodLength:
 Metrics/BlockLength:
   Enabled: true
   Exclude:
-    - 'spec/**/*'
+    - '**/spec/**/*'
 
 # デフォルト値を明示しないとHoundに怒られる
 Rails/FilePath:
