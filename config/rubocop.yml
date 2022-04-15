@@ -225,6 +225,9 @@ Rails/FilePath:
   EnforcedStyle: slashes
 
 ##################### RSpec ##################################
+RSpec/ExampleLength:
+  Max: 10
+
 # ネストの最大数(falseにしてもいいくらいだが、念の為)
 RSpec/NestedGroups:
   Max: 6
