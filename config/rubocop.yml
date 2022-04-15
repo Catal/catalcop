@@ -250,3 +250,7 @@ RSpec/BeforeAfterAll:
 ##################### Rails ##################################
 Rails/EnvironmentVariableAccess:
   AllowReads: true
+
+# `ago`や`since`がわかりやすいとは限らない
+Rails/DurationArithmetic:
+  Enabled: false
