@@ -247,7 +247,19 @@ RSpec/MultipleExpectations:
 RSpec/BeforeAfterAll:
   Enabled: false
 
+# context/itの説明を日本語でも書けるようにする
+RSpec/ContextWording:
+  Enabled: false
+
+# context/itの説明を日本語でも書けるようにする
+RSpec/ContextMethod:
+  Enabled: false
+
 RSpec/Rails/InferredSpecType:
+  Enabled: false
+
+# `generate :foo`と`create(:foo)`は共存させたい
+RSpec/FactoryBot/ConsistentParenthesesStyle:
   Enabled: false
 
 ##################### Rails ##################################
