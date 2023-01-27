@@ -7,11 +7,9 @@ AllCops:
     - "**/db/seeds.rb"
     - "**/db/migrate/*.rb"
     - "**/bin/*"
-    - "**/config/**/*"
     - "**/Guardfile"
     - "**/app/helpers/rating_helper.rb"
     - "**/node_modules/**/*"
-    - "**/lib/tasks/**/*"
   DisplayCopNames: true
   DisplayStyleGuide: true
   ExtraDetails: true
