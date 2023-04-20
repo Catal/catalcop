@@ -255,6 +255,10 @@ RSpec/ContextWording:
 RSpec/ContextMethod:
   Enabled: false
 
+# "meaningful name"を考える必要がないときもある
+RSpec/IndexedLet:
+  Enabled: false
+
 RSpec/Rails/InferredSpecType:
   Enabled: false
 
