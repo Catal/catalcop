@@ -263,7 +263,7 @@ RSpec/Rails/InferredSpecType:
   Enabled: false
 
 # `generate :foo`と`create(:foo)`は共存させたい
-RSpec/FactoryBot/ConsistentParenthesesStyle:
+FactoryBot/ConsistentParenthesesStyle:
   Enabled: false
 
 ##################### Rails ##################################
