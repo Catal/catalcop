@@ -134,6 +134,10 @@ Style/FrozenStringLiteralComment:
 Style/NumericPredicate:
   Enabled: false
 
+# `*`だけの委譲用変数はかえって読みにくい
+Style/ArgumentsForwarding:
+  UseAnonymousForwarding: false
+
 ##################### Layout ##################################
 
 # ({ と hash を開始した場合に ( の位置にインデントさせる
