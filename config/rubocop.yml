@@ -19,6 +19,7 @@ AllCops:
   StyleGuideBaseURL: https://github.com/rubocop-hq/ruby-style-guide/blob/master/README.adoc
 
 require:
+  - rubocop-factory_bot
   - rubocop-performance
   - rubocop-rails
   - rubocop-rspec

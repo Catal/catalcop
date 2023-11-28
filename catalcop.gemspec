@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rubocop"
+  spec.add_dependency "rubocop-factory_bot"
   spec.add_dependency "rubocop-performance"
   spec.add_dependency "rubocop-rails"
   spec.add_dependency "rubocop-rspec"
