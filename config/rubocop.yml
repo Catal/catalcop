@@ -264,7 +264,7 @@ RSpec/ContextMethod:
 RSpec/IndexedLet:
   Enabled: false
 
-RSpec/Rails/InferredSpecType:
+RSpecRails/InferredSpecType:
   Enabled: false
 
 # `generate :foo`と`create(:foo)`は共存させたい
