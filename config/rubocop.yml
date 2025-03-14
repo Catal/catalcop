@@ -8,8 +8,6 @@ AllCops:
     - "**/db/migrate/*.rb"
     - "**/bin/*"
     - "**/config/**/*"
-    - "**/Guardfile"
-    - "**/app/helpers/rating_helper.rb"
     - "**/node_modules/**/*"
     - "**/lib/tasks/**/*"
   DisplayCopNames: true
@@ -18,11 +16,13 @@ AllCops:
   NewCops: enable
   StyleGuideBaseURL: https://github.com/rubocop-hq/ruby-style-guide/blob/master/README.adoc
 
-require:
+plugins:
+  - rubocop-capybara
   - rubocop-factory_bot
   - rubocop-performance
   - rubocop-rails
   - rubocop-rspec
+  - rubocop-rspec_rails
 
 ##################### Style ##################################
 
