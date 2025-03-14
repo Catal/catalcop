@@ -21,9 +21,6 @@ And then execute:
 ```Gemfile
 group :development do
   gem "rubocop"
-  gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
-  gem "rubocop-rspec", require: false
 end
 ```
 
