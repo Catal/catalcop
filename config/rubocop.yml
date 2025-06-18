@@ -6,7 +6,7 @@ AllCops:
     - "**/db/schema.rb"
     - "**/db/seeds.rb"
     - "**/db/migrate/*.rb"
-    - "**/bin/*"
+    - "**/bin/**/*"
     - "**/config/**/*"
     - "**/node_modules/**/*"
     - "**/lib/tasks/**/*"
