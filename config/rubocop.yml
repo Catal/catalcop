@@ -7,12 +7,7 @@ AllCops:
     - "**/db/seeds.rb"
     - "**/db/migrate/*.rb"
     - "**/bin/**/*"
-    - "**/config/environments/**/*"
-    - "**/config/boot.rb"
-    - "**/config/application.rb"
-    - "**/config/environment.rb"
-    - "**/config/puma.rb"
-    - "**/config/initializers/inflections.rb"
+    - "**/config/**/*"
     - "**/node_modules/**/*"
     - "**/lib/tasks/**/*"
   DisplayCopNames: true
