@@ -14,7 +14,7 @@ AllCops:
   DisplayStyleGuide: true
   ExtraDetails: true
   NewCops: enable
-  StyleGuideBaseURL: https://github.com/rubocop-hq/ruby-style-guide/blob/master/README.adoc
+  StyleGuideBaseURL: https://github.com/rubocop/ruby-style-guide/blob/master/README.adoc
 
 plugins:
   - rubocop-capybara
