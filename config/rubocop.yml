@@ -9,7 +9,12 @@ AllCops:
     - "**/bin/**/*"
     - "**/config/**/*"
     - "**/node_modules/**/*"
-    - "**/lib/tasks/**/*"
+    - "**/lib/tasks/**/*"    
+    - "public/uploads/**/*"
+    - "tmp/**/*"
+    - "log/**/*"
+    - "coverage/**/*"
+    - ".git/**/*"
   DisplayCopNames: true
   DisplayStyleGuide: true
   ExtraDetails: true
